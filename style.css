@@ -174,12 +174,15 @@
 
 .navbar{
   background-color: rgba(0,0,0,0) ; 
-  transition:  background-color 0.2s;
+  transition:  background-color 0.2s, height 0.2s;
   transition-timing-function: ease-in-out;
+  height: 120px
+  
 }
 
 .navbar:hover{
   background-color: rgba(0,0,0,0.9) ; 
+  height: 100px
 }
 
 .navbar-light .navbar-nav .nav-link{
@@ -189,6 +192,7 @@
 /*Navbar scrolled*/
 .scrolled{
   background-color:rgba(0,0,0,0.7);
+  height: 50px
 }
 
 /*Testo Immagine Home*/
