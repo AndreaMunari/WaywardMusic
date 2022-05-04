@@ -5,6 +5,7 @@
   font-size:15px;
   line-height:24px;
   color:#737373;
+  border-top: solid 0.5px #fff;
 }
 .site-footer hr
 {
@@ -201,6 +202,13 @@
   color: #fff !important;
 }
 
+/*Background image*/
+.cropped{
+   /* width of container */
+  height: 1000px; /* height of container */
+  overflow: hidden;
+}
+
 /*Navbar scrolled*/
 .scrolled{
   background-color: rgba(23, 19, 19, 0.5);
@@ -218,14 +226,20 @@
 
 .centered {
   position: absolute;
-  top: 43%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
+.home-title{
+  font-size: 6.4rem;
+  letter-spacing: -.01em;
+  line-height: 1.125;
+}
+
 .centered-bottom{
   position: absolute;
-  top: 80%;
+  top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -241,3 +255,5 @@
 .modal-content{
   color: 'red';
 }
+
+
