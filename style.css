@@ -1,6 +1,6 @@
 .site-footer
 {
-  background-color:#26272b;
+  background-color:#000000;
   padding:45px 0 20px;
   font-size:15px;
   line-height:24px;
@@ -161,3 +161,38 @@
     font-weight:600
   }
 }
+
+
+.navbar-collapse {
+  flex-grow: 0 !important;
+}
+
+.container-fluid{
+  width: 80% !important;
+}
+
+
+.navbar{
+  background-color: rgba(0,0,0,0) ; 
+  transition:  background-color 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+.navbar:hover{
+  background-color: rgba(0,0,0,0.7) ; 
+}
+
+.navbar-light .navbar-nav .nav-link{
+  color: #fff !important;
+}
+
+/*Navbar scrolled*/
+.scrolled{
+  background-color:rgba(0,0,0,0.9);
+}
+
+
+
+
+
+
