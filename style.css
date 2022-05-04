@@ -179,7 +179,7 @@
 }
 
 .navbar:hover{
-  background-color: rgba(0,0,0,0.7) ; 
+  background-color: rgba(0,0,0,1) ; 
 }
 
 .navbar-light .navbar-nav .nav-link{
@@ -188,11 +188,22 @@
 
 /*Navbar scrolled*/
 .scrolled{
-  background-color:rgba(0,0,0,0.9);
+  background-color:rgba(0,0,0,0.7);
 }
 
+/*Testo Immagine Home*/
+.image-container{
+  position: relative;
+  text-align: center;
+  color: white;
+}
 
-
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 
 
