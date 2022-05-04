@@ -179,7 +179,7 @@
 }
 
 .navbar:hover{
-  background-color: rgba(0,0,0,1) ; 
+  background-color: rgba(0,0,0,0.9) ; 
 }
 
 .navbar-light .navbar-nav .nav-link{
@@ -201,6 +201,13 @@
 .centered {
   position: absolute;
   top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centered-bottom{
+  position: absolute;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
