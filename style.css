@@ -200,7 +200,7 @@
 
 .centered {
   position: absolute;
-  top: 40%;
+  top: 43%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -212,5 +212,14 @@
   transform: translate(-50%, -50%);
 }
 
+/*Modal */
+.modal-open{
+  padding: 0px !important;
+  overflow: auto !important;
+}
 
 
+
+.modal-content{
+  color: 'red';
+}
