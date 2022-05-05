@@ -302,6 +302,10 @@ main {
 }
 
 /*nav-link*/
+.nav-link{
+align-items: stretch;
+}
+
 .nav-link:hover{
   border-bottom: 0.5px solid rgb(255, 255, 255);
 }
@@ -312,6 +316,17 @@ main {
 
 .about-cit {
   font-size: 50px;
+}
+
+.nav-item{
+  height: 120px;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link-padding{
+  padding: 20px !important;
 }
 
 .about-citation-author {
