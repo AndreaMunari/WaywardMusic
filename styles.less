@@ -46,6 +46,8 @@
 
 /*Timeline*/
 .wrapper {
+  background: rgb(0,0,0);
+background: linear-gradient(360deg, rgba(0,0,0,1) 30%, rgba(22, 14, 19, 0.581) 100%,);
   background-color: #000000;
   width: 100%;
   min-height: 100vh;
@@ -64,7 +66,7 @@
     position: absolute;
     height: calc(100% - 40px);
     width: 1px;
-    background-color: #ba0101; //da modificare
+    background-color: #EB598A; //da modificare
     left: 50%;
     margin-top: 90px;
   }
@@ -95,7 +97,7 @@
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: #EB598A;
     box-shadow: 0 4px 20px -4px rgba(64, 64, 64, 0.8);
   }
   &:nth-child(odd) {
@@ -149,7 +151,7 @@
   display: inline-block;
   text-transform: uppercase;
   letter-spacing: 1px;
-  border: 2px solid white;
+  border: 0.5px solid rgba(255, 255, 255, 0.362) !important;
   border-radius: 20px;
   padding: 30px 40px;
   margin: 40px;
@@ -157,7 +159,7 @@
   transition: .5s all ease-in-out;
   &:hover {
     cursor: pointer;
-    background: rgb(197, 3, 129);
+    background: #EB598A;
     color: #fff;
     animation: none;
     //animation-play-state: paused;
@@ -166,15 +168,38 @@
 
 .button-pulse {
   animation: pulse 2s infinite 3s cubic-bezier(0.25, 0, 0, 1);
-  box-shadow: 0 0 0 0 rgb(214, 1, 211);
+  box-shadow: 0 0 0 0 #EB598A;
 }
 @keyframes pulse {
   to {
-    box-shadow: 0 0 0 25px rgba(0, 0, 0, 0); 
+    box-shadow: 0 0 0 18px rgba(0, 0, 0, 0); 
   }
 }
 
+/*signinButton*/
+.my-btn{
+  background-color: rgba(255, 255, 255,0);
+  border: 0.5px solid rgba(255, 255, 255, 0.362) !important;
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  cursor: pointer;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+  overflow: hidden;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border-radius: 10px;
+}
 
+.my-btn:hover{
+  color: #fff;
+  background: #EB598A;
+  -webkit-box-shadow: 0 0 10px #EB598A, 0 0 40px #EB598A, 0 0 80px #EB598A;
+          box-shadow: 0 0 10px #EB598A, 0 0 40px #EB598A, 0 0 80px #EB598A;
+}
 
 
 
