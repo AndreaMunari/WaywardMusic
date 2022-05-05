@@ -212,7 +212,9 @@
 /*Background image*/
 .cropped{
    /* width of container */
-  height: 1000px; /* height of container */
+  height: 100vh; /* height of container */
+  width: 100vm; /* height of container */
+
   overflow: hidden;
 }
 
@@ -229,6 +231,7 @@
   position: relative;
   text-align: center;
   color: white;
+  
 }
 
 .centered {
