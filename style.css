@@ -315,7 +315,8 @@ align-items: stretch;
 }
 
 .about-cit {
-  font-size: 50px;
+  font-size: 45px;
+  font-weight: bolder;
 }
 
 .nav-item{
@@ -330,8 +331,11 @@ align-items: stretch;
 }
 
 .about-citation-author {
-  font-size: 30px;
+  margin-top: 40px;
+  font-size: 25px;
   text-align: right;
+  font-style: italic;
+  font-weight: 100;
 }
 
 #mission {
