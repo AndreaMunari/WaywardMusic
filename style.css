@@ -333,3 +333,15 @@ align-items: stretch;
   font-size: 30px;
   text-align: right;
 }
+
+#mission {
+  color: #ea4c89;
+  font-size: large;
+}
+
+.scopri-artisti {
+  background-color: #ea4c89 !important;
+  width:fit-content;
+  height: fit-content;
+  /*max-width: 18rem;*/
+}
