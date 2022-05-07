@@ -349,3 +349,8 @@ align-items: stretch;
   height: fit-content;
   /*max-width: 18rem;*/
 }
+
+.pagina-attiva{
+  font-weight: 900;
+  color: #ea4c89 !important;
+}
