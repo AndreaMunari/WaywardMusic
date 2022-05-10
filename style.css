@@ -258,7 +258,9 @@ main {
   font-size: 6.4rem;
   letter-spacing: -.01em;
   line-height: 1.125;
+  font-family: 'Water Brush', cursive;
 }
+
 
 .centered-bottom{
   position: absolute;
@@ -409,45 +411,44 @@ align-items: stretch;
   max-width: 70% !important;
 }
 
-@media (max-width: 767px) {
-.navbar{
-  background-color:black !important;
-}
-.collapsed {
-  border-color: rgba(255, 255, 255, 0) ;
-  background-color: red;
-}
+@media (max-width: 991px) {
+  .navbar{
+    background-color:black !important;
+  }
+  .collapsed {
+    border-color: rgba(255, 255, 255, 0) ;
+    background-color: red;
+  }
 
-.navbar-toggler{
-  border-color: rgba(207, 13, 13, 0) !important ;
-  transition:none;
-  color: rgb(0, 0, 0) !important ;
+  .navbar-toggler{
+    border-color: rgba(207, 13, 13, 0) !important ;
+    transition:none;
+    color: rgb(0, 0, 0) !important ;
+  }
 
-}
+  .container{
+    max-width: 100%!important;
+    background-color:black;
+    padding-right: 50px!important;
+    padding-left: 50px!important;
 
-.container{
-  max-width: 100%!important;
-  background-color:black;
-  padding-right: 50px!important;
-  padding-left: 50px!important;
+  }
 
-}
+  .nav-link-padding{
+    padding: 00px !important;
+  }
 
-.nav-link-padding{
-  padding: 00px !important;
-}
+  .nav-link{
+    font-size: 24px;
+  }
 
-.nav-link{
-  font-size: 24px;
-}
+  .nav-item{
+    height: 100px;
+  }
 
-.nav-item{
-  height: 100px;
-}
-
-.header{
-  background-color:black !important;
-}
+  .header{
+    background-color:black !important;
+  }
 
 }
 
