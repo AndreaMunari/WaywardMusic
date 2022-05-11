@@ -44,3 +44,8 @@ function check_for_fade() {
         }
     });
 })(jQuery)
+
+//carousel
+$('.carousel').carousel({
+  interval: 2000
+})

@@ -462,17 +462,22 @@ align-items: stretch;
 }
 
 .h4title{
-  font-size: 25px;
+  font-size: 28px;
   line-height: 1;
   letter-spacing: 0.2px;
   font-style: italic;
   font-weight: lighter;
+ 
+}
 
+.h5title{
+  margin-top: 3rem;
+  margin-bottom: 0rem;
 }
 
 .p-doc{
   display: block;
-  margin-block-start: 1em;
+  margin-block-start: 0em;
    margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
@@ -553,6 +558,18 @@ align-items: stretch;
   color:#fff;
 }
 
+.doc-ul{
+  font-size: 18px!important;
+  line-height: 1.56;
+  
+}
+
+.logo-documentation{
+ 
+  width: 100%!important;
+  
+}
+
 
 }
 
@@ -560,7 +577,148 @@ align-items: stretch;
   margin-bottom:20px;
 }
 
+#paletteImage{
+  width: auto;
+  max-height: 256px;
+}
+
+.bolder{
+  font-weight:bold;
+  
+}
 
 
+/*palette documentazione*/
+.colorpalette{
+  padding: 20px;
+  border-radius: 2px;
+  text-align: center;
+  font-weight: lighter;
+text-transform: uppercase;
+font-size:1rem;
+letter-spacing: 1;
+margin-bottom: 0px;
+}
+ /*id colori palette*/
+#color-EA4C89{
+  background-color:#ea4c89;
+}
+#color-8F00FF{
+  background-color:#8F00FF;
+}
+#color-FFFFFF{
+  background-color:#FFFFFF;
+  color:black;
+}
+#color-000000{
+  background-color:#000000;
+  border:1px solid rgba(255, 255, 255, 0.096)
+}
 
+/*ul documentazione*/
+.doc-ul{
+  font-size:20px;
+  font-weight:lighter;
+  list-style-type: circle;
+
+}
+
+.logo-documentation{
+  align-items: left ;
+  opacity: 0.8;
+  width: 100%;
+}
+
+
+  
+
+/*corsi*/
+.lezione{
+  width: 100%;
+  background-image: url("https://pixelprowess.com/i/carousel_swamp.png");
+}
+
+.categoria-lezione{
+ text-align: center;
+ background-color: #29aafe;
+ padding:10px;
+ margin-top:132px;
+ font-weight: 500;
+ font-size: 1rem;
+ text-decoration: none;
+}
+
+.pagamento{
+  background-color: #8F00FF;
+  color: white;
+}
+
+.gratuita{
+  background-color: white!important;
+  color: #000;
+
+}
+
+.lezione-non-attiva{
+  opacity: 0.5;
+  cursor: default;
+  pointer-events: none;  
+  text-decoration: none;      
+
+}
+.lezione-attiva{
+  text-decoration:none;
+}
+
+.search-bar{
+  margin-top:20px;
+  border: 1px solid rgba(255, 255, 255, 0.425);
+  padding: 15px;
+  border-radius: 10px;
+  cursor: not-allowed;
+  font-size: 20px;
+  font-weight:100;
+  background: rgba(255, 255, 255, 0.038)
+}
+
+.right{
+  text-align: right;
+}
+
+.nome-lezione{
+  margin-left: 20px;
+}
+.carousel-item{
+height:500px;
+background-size: auto;
+  background-position: center center;
+}
+
+#lezione1{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.719)), url("https://storage.googleapis.com/hivemusic/2019/04/image-rolling-stones-cover.jpg");
+background-position: center center;
+  backdrop-filter: blur(20px)
+
+
+}
+
+#h1corsi{
+  margin-top:95px;
+  text-align: left!important;
+  margin-bottom: 20px;;
+}
+
+#h2corsi{
+  margin-top:125px;
+  text-align: left!important;
+}
+
+.text-slide-corsi{
+  font-size: 1.5rem;
+}
+
+.button-slide-corsi{
+  margin: 0px!important;
+  background-color: #ea4c89!important;
+}
 

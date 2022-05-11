@@ -8,7 +8,7 @@
     <meta name="robots" content="index, follow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Documentazione | WaywardMusic</title>
+    <title>Corsi | WaywardMusic</title>
 
     <link rel="icon" type="image/svg+xml" href="../imgs/waywardMusic-favicon.svg">
 
@@ -66,7 +66,7 @@
                 <div class="mx-auto"></div>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link-padding nav-link text-white" href="corsi.html">Corsi</a>
+                        <a class="pagina-attiva nav-link-padding nav-link text-white" href="corsi.html">Corsi</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link-padding nav-link text-white " href="about.html">About</a>
@@ -135,153 +135,84 @@
     </div>
 
     <main>
-        <div class="image-container doc-title cropped black-bg">
-            <div style="width: 100%">
+
+
+        <!--Test Carousel-->
+
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div id="lezione1" class="carousel-item active">
+                    <div class="testo-documentazione">
+                        <h2 id="h2corsi" class="h1title">Novità</h2>
+
+                        <p class="text-slide-corsi">Rollingstones</p>
+                        <a href="#" class="button-slide-corsi button my-btn ">Vai al Corso</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testo-documentazione">
+                        <h2 id="h2corsi" class="h1title">Novità</h2>
+
+                        <p class="text-slide-corsi">Led Zeppelin</p>
+                        <a href="#" class="button-slide-corsi button my-btn ">Vai al Corso</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="slide-corsi">Nome2 </div>
+                </div>
             </div>
-
-            <div class="centered-about centered home-title about-cit">
-
-
-                <h1 class="h1title"> Documentazione</h1>
-
-
-            </div>
+            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
+
+
+
+
+
         <div class="testo-documentazione">
-            <img class="logo-documentation" src="/imgs/waywardMusic-logo-work-in-progress.svg">
-            <h3 class="h3title">Abstract</h3>
-            <p class="p-doc">Il portale Wayward Music è stato realizzato perchè è incredibilmente facile imparare a
-                suonare uno
-                strumento
-                su internet, ma non è altrettanto semplice trovare qualcosa che aiuti un giovane artista a definire la
-                sua
-                impronta musicale.</p>
-            <p class="p-doc"> Wayward Music aiuta infatti ogni giovane artista a studiare lo stile di leggende che
-                hanno fatto la
-                storia!
-                E se si cerca qualcosa di più attuale, è possibile imparare anche dall'abilità degli artisti
-                contemporanei
-                di evolvere la propria musica per rimanere in vetta.
-                Le videolezioni sono come brevissimi documentari, e offrono spunti continui per provare quanto imparato:
-                la
-                piattaforma obbliga l'utente a mettersi in gioco per poter proseguire.
-            </p>
-            <h2 class="h2title">Project Management Plan</h2>
-            <h3 class="h3title">Benchmarking</h3>
-            <p class="p-doc">L’obiettivo di Wayward Music è la realizzazione di un portale web che, attraverso canzoni e
-                aneddoti
-                realtivi
-                alla musica rock contemporanea e non, invogli l'utente target a mettersi in gioco.
-                La ricerca del proprio stile, imparando dai grandi artisti del passato, e il come differenziarsi è
-                quello
-                che viene offerto attraverso questo servizio</p>
-            <p class="p-doc">
-                I pilastri su cui si basa Wayward Music sono: contenuti testuali, immagini, front-end portale devono
-                tramettere il senso di Ribellione e del “differenziarsi essendo se stessi”.
-                Il Target a cui Wayward Music si rivolge sono giovani artisti
-                In primo luogo è stata svolta un’attenta richerca su internet, con lo scopo di individuare Competitors
-                già
-                esistenti che afffrontassero temi analoghi a Wayward Music:</p>
-
-            <p class="p-doc">
-                <a class="documentation-link" href="https://nam.it/">Nam</a> Target più ampio rispetto a Wayward Music,
-                a livello di contenuti al
-                centro
-                dell’attenzione nam e invece Wayward Music è l’artista il protagonista
-                <br>
-                <a class="documentation-link" href="https://vibly.tv/">Vibly</a> Target diverso, servizio diverso
-                (lezioni e non storytelling)
-            </p>
-            <h3 class="h3title">Struttura e layout</h3>
-            <h4 class="h4title">Architettura del sito</h4>
-            <!--Inserire architettura sito-->
-            <img class="site-wireframe" src="../imgs/Architettura-Sito-WaywardMusic.jpg">
-
-            <h4 class="h4title">Wireframe</h4>
-            <!-- potremmo inserire un carousel-->
-            <img class="site-wireframe" src="../imgs/Homepage-Wireframe-WaywardMusic.jpg">
-            <img class="site-wireframe" src="../imgs/Corsi-Wireframe-WaywardMusic.jpg">
-            <img class="site-wireframe" src="../imgs/Lezione-Wireframe-WaywardMusic.jpg">
-            <img class="site-wireframe" src="../imgs/About-Wireframe-WaywardMusic.jpg">
-
-            <h4 id="scelte-grafiche" class="h4title">Scelte Grafiche</h4>
-            <h5 class="h5title">Font:</h5>
-            <p class="p-doc">Libreria Font utilizzata: <a class="documentation-link"
-                    href="https://fonts.google.com/">Google Fonts</a><br>
-            <ul class="doc-ul">
-                <li> <span class="bolder">Font 1:</span> “Water Brush”, cursive. Obiettivo: enfarizzare il sentimento di
-                    ribellione (nostro
-                    leitmotiv)</li>
-                <li><span class="bolder">Font 2:</span> “Lato”, sans-serif Per quanto riguarda invece la scelta del font
-                    della scritta music
-                    rappresentare di più la classicità e la solidità della Musica in modo tale che ci fosse della
-                    contrapposizione tra le due parole, contrapposizione richiamata anche all’interno del portale</li>
-            </ul>
-            </p>
-            <h5 class="h5title">Palette Cromatica:</h5><br>
-            <div class="row">
-                <div class="col-6">
-                    <p id="color-EA4C89" class="colorpalette">#ea4c89</p>
-                    <p id="color-8F00FF" class="colorpalette">#8f00ff</p>
-                    <p id="color-FFFFFF" class="colorpalette">#ffffff</p>
-                    <p id="color-000000" class="colorpalette">#000000</p>
+            <h1 id="h1corsi" class="h1title">Corsi</h1>
 
 
-                </div>
-                <div class="col-6">
-
-                    <img id="paletteImage" class="site-wireframe" src="../imgs/palette-Wireframe-WaywardMusic.jpg">
-
-                </div>
-
-
+            <!--Searchbar-->
+            <div class="search-bar">
+                Cerca la tua ispirazione ... <i class="fa fa-search right"></i>
             </div>
-            <p class="p-doc">Per la scelta cromatica siamo partiti dalla foto di una ragazza che evocava il senso di
-                libertà e di “essere se stessa”</p>
 
+            <h3 class="h3title">Nome Artista/Gruppo </h3>
 
+            <div class="row">
+                <div class="col-lg-4 col-6">
+                    <a class="lezione-attiva" href="#">
+                        <div class="lezione nome-gruppo-per-bg">
+                            <p class="nome-lezione">lezione3</p>
+                            <p class="categoria-lezione gratuita">Lezione Gratuita</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-6">
+                    <a class="lezione-non-attiva" href="#">
+                        <div class="lezione nome-gruppo-per-bg">
+                            <p class="nome-lezione">lezione3</p>
+                            <p class="categoria-lezione gratuita">Lezione Gratuita</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-6">
+                    <a class="lezione-attiva" href="#">
+                        <div class="lezione nome-gruppo-per-bg">
+                            <p class="nome-lezione">lezione3</p>
+                            <p class="categoria-lezione pagamento">Lezione Premium</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
 
-
-            <h5 class="h5title">Peculiarità Stilistiche:</h5>
-            <p class="p-doc">Nella realizzazione del portale Wayward Music è stata fatta particolare attenzione a UI e
-                UX, rispettando sempre il proprio leitmotiv e creando un sito esperienziale.
-                Nella Homepage è stato utilizzato un Visual Storytelling: partendo dalla foto di un concerto dove non si
-                vede la band si è voluto far immedesimare l’utente target come “il gruppo che potrebbe star suonando in
-                quel palco con tanta gente”, navigando verso il basso appaiono canzoni e band che hanno fatto la storia
-                del rock e come sezione finale vi è la call to action con una frase evocativa che vuole creare empatia
-                con l’utente, invogliando il giovane artista a mettersi in gioco.
-                La cura dei dettagli è stata la nostra prorità, per esempio i bottoni con state hover su sfondo nero
-                assumono le sembianze (magari da cambiare) di luci accese durante un concerto
-            </p>
-
-            <h5 class="h5title">Immagini:</h5>
-            <p class="p-doc">INSERISCI IMMAGINI TESTO....
-            </p>
-
-            <h4 class="h4title">Linguaggi e Strumenti:</h4>
-            <p class="p-doc">
-            <ul class="doc-ul">
-                <li><span class="bolder">HTML:</span> Struttura sito</li>
-                <li><span class="bolder">CSS:</span> Grafica sito</li>
-                <li><span class="bolder">JavaScript:</span> Aforismi e Preloader</li>
-                <li><span class="bolder">JQuery:</span> Navbar per scroll</li>
-                <li><span class="bolder">Bootstrap:</span> Supporto per grafica e Responsiveness</li>
-                <li><span class="bolder">Google Analytics:</span> Supporto per grafica e Responsiveness</li>
-
-                <li><span class="bolder">Adobe Illustrator:</span> Realizzazione Logo</li>
-                <li><span class="bolder">Adobe Photoshop:</span> Realizzazione Logo</li>
-                <li><span class="bolder">PowerPoint:</span> Presentazione</li>
-
-
-            </ul>
-            </p>
-
-            <h2 class="h2title">Communication Strategy </h2>
-            <h3 class="h3title">Background</h3>
-            <h3 class="h3title">Obiettivi comunicativi</h3>
-            <h3 class="h3title">Target audience e messaggio</h3>
-            <h3 class="h3title">Promozione</h3>
-            <h3 class="h3title">Valutazione dei risultati</h3>
 
 
 
