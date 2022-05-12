@@ -143,6 +143,52 @@
 }
 
 
+
+/*Timeline responsive*/
+@media (max-width:727px) {
+
+  .each-event {
+    /*color: #777;*/
+    /*padding: 15px;*/
+    margin: auto;
+    width: 300px;
+    position: relative;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: all 0.5s ease-in-out;
+    &:before {
+      content: "";
+      position: absolute;
+      top: -20px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: #EB598A;
+      /*box-shadow: 0 4px 20px -4px rgba(64, 64, 64, 0.8);*/
+      box-shadow: black;
+    }
+    
+    &:nth-child(odd) {
+      margin: auto;
+      margin-top: 10%;
+      &:before {
+        left: 50%-3px;
+      }
+    }
+    &:nth-child(even) {
+      margin: auto;
+      margin-top: 10%;
+      &:before {
+        left: 50%-3px;
+      }
+    }
+    
+  }
+
+}
+
+
+
 // BUTTON STYLES
 
 .button {
