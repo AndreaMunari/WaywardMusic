@@ -538,22 +538,22 @@ align-items: stretch;
 }
 
 .documentation-link{
-  color: #ea4c89;
-  font-weight: bold;
-  text-decoration:  none;
+  color: #ea4c89 !important;
+  font-weight: bold !important;
+  text-decoration:  none !important;
 }
 
 .documentation-link:active{
-  color: #ff0162;
-  font-weight: bold;
-  text-decoration: underline;
+  color: #ff0162 !important;
+  font-weight: bold !important;
+  text-decoration: underline !important;
 }
 
 
 .documentation-link:hover{
-  color: #ff0162;
-  font-weight: bold;
-  text-decoration: underline;
+  color: #ff0162 !important;
+  font-weight: bold !important;
+  text-decoration: underline !important;
 }
 
 #scelte-grafiche{
@@ -804,8 +804,6 @@ background-size: auto;
 background-position: center center;
 background-size: cover;
   backdrop-filter: blur(20px)
-
-
 }
 
 #h1corsi{
