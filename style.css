@@ -773,15 +773,18 @@ color: rgb(255, 255, 255)
 }
 
 .search-bar{
-  margin-top:20px;
-  border: 1px solid rgba(255, 255, 255, 0.425);
+  background-color: #000 !important;
+  color:white !important;
+  border: 1px solid rgba(255, 255, 255, 0.425) !important;
+  /*margin-top:20px;*/
   padding: 15px;
   border-radius: 10px;
-  cursor: not-allowed;
+  /*cursor: not-allowed;*/
   font-size: 20px;
   font-weight:100;
-  background: rgba(255, 255, 255, 0.038)
 }
+
+
 
 .right{
   text-align: right;

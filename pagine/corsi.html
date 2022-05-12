@@ -175,21 +175,30 @@
 
 
 
-        <div class="testo-documentazione">
+        <div class="testo-documentazione" id="corsi">
             <h1 id="h1corsi" class="h1title">Corsi</h1>
 
 
             <!--Searchbar-->
-            <div class="search-bar">
-                Cerca la tua ispirazione ... <i class="fa fa-search right"></i>
+            <!--<div class="search-bar ms-n3">
+                Cerca la tua ispirazione ... 
+                <i class="fa fa-search right"></i>
+            </div>-->
+
+            <div class="input-group mb-3">
+                <input type="text" class="search-bar form-control" placeholder="Cerca un artista e lasciati ispirare..." aria-label="Cerca un artista e lasciati ispirare" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                    <i class="fa fa-search"></i>
+                </button>
             </div>
 
 
 
             <!--Lezioni-->
-            <a name="TheRollingStones"></a>
-            <h3 class="h3title" name="The Rolling Stones">The Rolling Stones</h3>
-            <div class="row flex-grow-1">
+            
+            <div class="search-item">
+                <a name="TheRollingStones"></a>
+                <h3 class="h3title" name="The Rolling Stones">The Rolling Stones</h3>
 
                 <div class="row flex-grow-1">
                     <div class="col-lg-4 col-6">
@@ -214,16 +223,16 @@
                             </div>
                         </a>
                     </div>
+                    
 
                 </div>
-
-
 
             </div>
 
             <!--Lezioni-->
-            <h3 class="h3title">Led Zeppelin</h3>
-            <div class="row flex-grow-1">
+            
+            <div class="search-item">
+                <h3 class="h3title">Led Zeppelin</h3>
 
                 <div class="row flex-grow-1">
                     <div class="col-lg-4 col-6">
@@ -335,6 +344,36 @@
 
     <!-- local JS -->
     <script src="../App.js"></script>
+
+    <script>
+        jQuery(document).ready(function($){
+
+            $('.search-item .h3title').each(function(){
+            $(this).attr('data-search-term', $(this).text().toLowerCase());
+            });
+            
+            $('.search-bar').on('change', function(){
+            
+            var searchTerm = $(this).val().toLowerCase();
+            
+                $('.search-item .h3title').each(function(){
+
+                    if(searchTerm.length !== 0){
+                        if ($(this).filter('[data-search-term *= ' + searchTerm + ']').length > 0 || searchTerm.length < 1) {
+                            $(this).parent().show();
+                        } else {
+                            $(this).parent().hide();
+                        }
+                    } else {
+                        $(this).parent().show();
+                    }
+            
+                });
+            
+            });
+            
+            });
+    </script>
 
 </body>
 
