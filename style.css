@@ -254,11 +254,21 @@ main {
 }
 
 .home-title{
-  color: white;
+ /* color: white;
   font-size: 6.4rem;
   letter-spacing: -.01em;
   line-height: 1.125;
+  font-family: 'Water Brush', cursive;*/
+  font-size: 120px;
+    margin: 64px auto;
+    line-height: 1.1;
+    letter-spacing: -0.8px;
+    color: white;
+    font-family: 'lato', cursive;
+    font-weight: bold;
+
 }
+
 
 .centered-bottom{
   position: absolute;
@@ -286,6 +296,28 @@ main {
   color: rgba(0, 0, 0, 0.8);
   width: 40vh;
 }
+
+
+.img-timeline {
+  opacity: 0.4;
+}
+
+.each-event:hover > *:not(.card-img-overlay) {
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+}
+
+.card-title-timeline {
+  color: #ea4c89;
+  font-weight: bold;
+  text-decoration:  none;
+}
+
+.timeline-subtitle {
+  color: #f881ae;
+}
+
+
 /*Scrollbar*/
 
  ::-webkit-scrollbar-track
@@ -326,6 +358,8 @@ align-items: stretch;
 .about-cit {
   font-size: 45px;
   font-weight: bolder;
+  text-align: center;
+  line-height: 3rem;
 }
 
 .nav-item{
@@ -387,54 +421,51 @@ align-items: stretch;
   max-width: 70% !important;
 }
 
-@media (max-width: 767px) {
-.navbar{
-  background-color:black !important;
-}
-.collapsed {
-  border-color: rgba(255, 255, 255, 0) ;
-  background-color: red;
+@media (max-width: 991px) {
+  .navbar{
+    background-color:black !important;
+  }
+  .collapsed {
+    border-color: rgba(255, 255, 255, 0) ;
+    background-color: red;
+  }
+
+  .navbar-toggler{
+    border-color: rgba(207, 13, 13, 0) !important ;
+    transition:none;
+    color: rgb(0, 0, 0) !important ;
+  }
+
+  .container{
+    max-width: 100%!important;
+    background-color:black;
+    padding-right: 50px!important;
+    padding-left: 50px!important;
+
+  }
+
+  .nav-link-padding{
+    padding: 00px !important;
+  }
+
+  .nav-link{
+    font-size: 24px;
+  }
+
+  .nav-item{
+    height: 100px;
+  }
+
+  .header{
+    background-color:black !important;
+  }
+
 }
 
-.navbar-toggler{
-  border-color: rgba(207, 13, 13, 0) !important ;
-  transition:none;
-  color: rgb(0, 0, 0) !important ;
-
-}
-
-.container{
-  max-width: 100%!important;
-  background-color:black;
-  padding-right: 50px!important;
-  padding-left: 50px!important;
-
-}
-
-.nav-link-padding{
-  padding: 00px !important;
-}
-
-.nav-link{
-  font-size: 24px;
-}
-
-.nav-item{
-  height: 100px;
-}
-
-.header{
-  background-color:black !important;
-}
-
-}
-
-.modal{
-  background-color:rgba(0, 0, 0, 0.5)
-}
 
 .modal-content{
-  border: 0.1px solid #ea4c89!important;
+  -webkit-box-shadow: 0 0 10px #eb598a4e, 0 0 40px #eb598a22, 0 0 80px #eb598a0f;
+  box-shadow: 0 0 10px #eb598a6d, 0 0 40px #eb598a62, 0 0 80px #eb598a2f;
 }
 
 /*Pagina documentazione*/
@@ -521,47 +552,43 @@ align-items: stretch;
   margin-top:40px
 }
 @media (max-width: 767px) {
+
+  .carousel-item{
+    height: 450px !important;;
+  }
+
   .p-doc{
     font-size: 18px;
     line-height: 1.56;
     
-}
+  }
 
-.testo-documentazione{
-  margin-left: 15px;
-  margin-right: 15px;
-}
+  .testo-documentazione{
+    margin-left: 15px;
+    margin-right: 15px;
+  }
 
-.h1title{
-  text-align: center;
-  font-size: 40px;
-  font-weight: bold;
-  line-height: 1.2;
-  letter-spacing: -0.4px;
+  .h1title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: -0.4px;
 
-}
+  }
 
-.site-wireframe{
-  width: 100%;
-}
+  .site-wireframe{
+    width: 100%;
+  }
 
 
-.centered-about{
-  transform: translate(-50%, -20%);
-}
-
-.modal-content {
-  background-color: rgb(0, 0, 0)!important;
-}
-/*Responsive Modal*/
-.form-title{
-  color:#fff;
-}
+  .centered-about{
+    transform: translate(-50%, -20%);
+  }
 
 .doc-ul{
   font-size: 18px!important;
   line-height: 1.56;
-  
 }
 
 .logo-documentation{
@@ -570,6 +597,13 @@ align-items: stretch;
   
 }
 
+  .modal-content {
+    background-color: rgb(0, 0, 0)!important;
+  }
+  /*Responsive Modal*/
+  .form-title{
+    color:#fff;
+  }
 
 }
 
@@ -635,18 +669,63 @@ margin-bottom: 0px;
 /*corsi*/
 .lezione{
   width: 100%;
+  height: 200px;
+  margin-bottom: 1rem;
+  background-size: cover;
   background-image: url("https://pixelprowess.com/i/carousel_swamp.png");
+  transition:all 0.2s;
+  
 }
 
-.categoria-lezione{
- text-align: center;
- background-color: #29aafe;
- padding:10px;
- margin-top:132px;
- font-weight: 500;
- font-size: 1rem;
- text-decoration: none;
+.lezione:hover{
+  color: #fff;
+  background: #EB598A;
+  -webkit-box-shadow: 0 0 10px #eb598a4e, 0 0 40px #eb598a22, 0 0 80px #eb598a0f;
+          box-shadow: 0 0 10px #eb598a6d, 0 0 40px #EB598A, 0 0 80px #eb598a2f;
 }
+
+
+
+#led-zeppelin-bg-stairway{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.53)), url("https://e.snmc.io/i/1200/s/10a2f05241e036f7d2895df3ef6ce663/5026476");
+  background-position: center center;
+  background-size: cover;
+
+}
+
+#led-zeppelin-bg-blackdog{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.53)), url("https://www.virginradio.it/upload/black_dog-1606900865449.png");
+  background-position: center center;
+  background-size: cover;
+
+}
+
+#rolling-stones-bg-paintitblack{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.53)), url("https://live.staticflickr.com/6232/6256809340_18dab26835_b.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+#rolling-stones-bg-satisfaction{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.53)), url("https://live.staticflickr.com/4772/40951892541_c079bfc4ae_b.jpg");
+  background-position: center center;
+  background-size: cover;
+
+}
+
+
+
+
+.categoria-lezione{
+  text-align: center;
+  background-color: #29aafe;
+  padding:10px;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  margin-top:133px;
+ }
+
 
 .pagamento{
   background-color: #8F00FF;
@@ -668,6 +747,19 @@ margin-bottom: 0px;
 }
 .lezione-attiva{
   text-decoration:none;
+}
+
+
+
+
+
+
+.testo-lezioni-corsi{
+  position: relative;
+padding-left:20px;
+padding-top: 20px;
+height: 23px;
+color: rgb(255, 255, 255)
 }
 
 .search-bar{
@@ -697,6 +789,7 @@ background-size: auto;
 #lezione1{
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.719)), url("https://storage.googleapis.com/hivemusic/2019/04/image-rolling-stones-cover.jpg");
 background-position: center center;
+background-size: cover;
   backdrop-filter: blur(20px)
 
 
@@ -722,3 +815,39 @@ background-position: center center;
   background-color: #ea4c89!important;
 }
 
+
+
+.image-about{
+ padding: 20vh;
+}
+
+#image-about-1{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.719)), url("https://leganerd.com/wp-content/uploads/2021/09/Led-Zeppelin-Laurance-Ratner-scaled.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+#image-about-2{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.719)), url("https://leganerd.com/wp-content/uploads/2021/09/Led-Zeppelin-Laurance-Ratner-scaled.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.background-corsi{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.719)), url("https://leganerd.com/wp-content/uploads/2021/09/Led-Zeppelin-Laurance-Ratner-scaled.jpg");
+height:200px;
+background-size: cover;
+}
+
+.homepage-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.719)), url("https://c.pxhere.com/photos/e6/3b/CC0_Concert_Crowd_Entertainer_Instrument_Listen_Musician_Play-1611172.jpg!d");
+  background-position: center center;
+  background-size: cover;
+
+}
+
+.punto{
+  color:#ea4c89;
+  font-size:10rem;
+  font-weight: bolder;
+}
