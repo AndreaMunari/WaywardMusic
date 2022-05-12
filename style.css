@@ -180,6 +180,14 @@ main {
     margin-right:0;
     font-weight:600
   }
+
+  .fixed-top{
+    position: relative!important;
+  }
+
+  .scrolled{
+    height: 120px;
+  }
 }
 
 
@@ -552,6 +560,8 @@ align-items: stretch;
   margin-top:40px
 }
 @media (max-width: 767px) {
+
+  /**/
 
   .carousel-item{
     height: 450px !important;;

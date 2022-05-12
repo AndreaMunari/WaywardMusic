@@ -2,7 +2,9 @@
 $(function () {
     $(document).scroll(function () {
       var $nav = $(".navbar");
-      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+      if($( window ).width()  > 991    ){
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+      }
     });
   });
 
@@ -49,3 +51,5 @@ function check_for_fade() {
 $('.carousel').carousel({
   interval: 2000
 })
+
+//fix navbar
