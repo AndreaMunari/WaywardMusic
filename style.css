@@ -410,9 +410,27 @@ align-items: stretch;
   .mission-text {
     max-width: 648px !important;
   }
+
+  #mission-title-about{
+    margin-top: 4rem;
+  }
+
+
 }
 
 @media (max-width: 767px) {
+
+  .centered-documentation{
+    transform: translate(-50%, -60%)!important;
+
+    top: 0% !important;;
+  }
+
+  .about-cit{
+    margin-top:3rem;
+    line-height: 2.8rem;
+    letter-spacing: -3px;
+  }
 
   .mission-text {
     font-size: 18px;
@@ -466,6 +484,9 @@ align-items: stretch;
 
   .header{
     background-color:black !important;
+  }
+  #title-documentation{
+    height: 100px;
   }
 
 }
@@ -563,6 +584,16 @@ align-items: stretch;
 
   /**/
 
+  .centered{
+    top:40%;
+  }
+
+  .home-title{
+    font-size:4rem;
+    line-height: 2.5rem;
+    text-align: left;
+  }
+
   .carousel-item{
     height: 450px !important;;
   }
@@ -576,6 +607,10 @@ align-items: stretch;
   .testo-documentazione{
     margin-left: 15px;
     margin-right: 15px;
+  }
+
+  .margin-carousel-corsi-responsive{
+    margin-left:15%;
   }
 
   .h1title{
