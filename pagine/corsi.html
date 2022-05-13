@@ -140,35 +140,40 @@
         <!--Test Carousel-->
         <div id="carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active" id="lezione1" data-bs-interval="5000">
-                <div class="testo-documentazione">
-                    <h2 id="h2corsi" class="h1title">Novità</h2>
+                <div class="carousel-item active" id="lezione1" data-bs-interval="5000">
+                    <div class="testo-documentazione margin-carousel-corsi-responsive">
+                        <h2 id="h2corsi" class="h1title">Novità</h2>
 
-                    <p class="text-slide-corsi">Rolling Stones</p>
-                    <a href="#TheRollingStones" class="button-slide-corsi button my-btn ">Vai al Corso</a>
+                        <p class="text-slide-corsi">Rolling Stones</p>
+                        <a href="#TheRollingStones" class="button-slide-corsi button my-btn ">Vai al Corso</a>
+                    </div>
                 </div>
-              </div>
-              <div class="carousel-item" data-bs-interval="5000">
-                <div class="testo-documentazione">
-                    <h2 id="h2corsi" class="h1title">Novità</h2>
+                <div class="carousel-item" id="lezione2" data-bs-interval="5000">
+                    <div class="testo-documentazione margin-carousel-corsi-responsive">
+                        <h2 id="h2corsi" class="h1title">Novità</h2>
 
-                    <p class="text-slide-corsi">Led Zeppelin</p>
-                    <a href="#" class="button-slide-corsi button my-btn ">Vai al Corso</a>
+                        <p class="text-slide-corsi">Led Zeppelin</p>
+                        <a href="#" class="button-slide-corsi button my-btn ">Vai al Corso</a>
+                    </div>
                 </div>
-              </div>
-              <div class="carousel-item" data-bs-interval="5000">
-                <div class="slide-corsi">Nome2 </div>
-              </div>
+                <div class="carousel-item" id="lezione3" data-bs-interval="5000">
+                    <div class="testo-documentazione margin-carousel-corsi-responsive">
+                        <h2 id="h2corsi" class="h1title">Novità</h2>
+
+                        <p class="text-slide-corsi">The Doors</p>
+                        <a href="#" class="button-slide-corsi button my-btn ">Vai al Corso</a>
+                    </div>
+                </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
             </button>
-          </div>
+        </div>
 
 
 
@@ -183,7 +188,8 @@
             </div>-->
 
             <div class="input-group mb-3">
-                <input type="text" class="search-bar form-control" placeholder="Cerca un artista e lasciati ispirare..." aria-label="Cerca un artista e lasciati ispirare" aria-describedby="button-addon2">
+                <input type="text" class="search-bar form-control" placeholder="Cerca un artista e lasciati ispirare..."
+                    aria-label="Cerca un artista e lasciati ispirare" aria-describedby="button-addon2">
                 <button class="btn btn-outline-secondary" type="button" id="button-addon2">
                     <i class="fa fa-search"></i>
                 </button>
@@ -192,7 +198,7 @@
 
 
             <!--Lezioni-->
-            
+
             <div class="search-item">
                 <a name="TheRollingStones"></a>
                 <h3 class="h3title" name="The Rolling Stones">The Rolling Stones</h3>
@@ -220,14 +226,14 @@
                             </div>
                         </a>
                     </div>
-                    
+
 
                 </div>
 
             </div>
 
             <!--Lezioni-->
-            
+
             <div class="search-item">
                 <a name="LedZeppelin"></a>
                 <h3 class="h3title">Led Zeppelin</h3>
@@ -344,19 +350,19 @@
     <script src="../App.js"></script>
 
     <script>
-        jQuery(document).ready(function($){
+        jQuery(document).ready(function ($) {
 
-            $('.search-item .h3title').each(function(){
-            $(this).attr('data-search-term', $(this).text().toLowerCase());
+            $('.search-item .h3title').each(function () {
+                $(this).attr('data-search-term', $(this).text().toLowerCase());
             });
-            
-            $('.search-bar').on('change', function(){
-            
-            var searchTerm = $(this).val().toLowerCase();
-            
-                $('.search-item .h3title').each(function(){
 
-                    if(searchTerm.length !== 0){
+            $('.search-bar').on('change', function () {
+
+                var searchTerm = $(this).val().toLowerCase();
+
+                $('.search-item .h3title').each(function () {
+
+                    if (searchTerm.length !== 0) {
                         if ($(this).filter('[data-search-term *= ' + searchTerm + ']').length > 0 || searchTerm.length < 1) {
                             $(this).parent().show();
                         } else {
@@ -365,12 +371,12 @@
                     } else {
                         $(this).parent().show();
                     }
-            
+
                 });
-            
+
             });
-            
-            });
+
+        });
     </script>
 
 </body>

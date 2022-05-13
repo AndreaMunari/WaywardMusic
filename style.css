@@ -441,9 +441,27 @@ align-items: stretch;
   .mission-text {
     max-width: 648px !important;
   }
+
+  #mission-title-about{
+    margin-top: 4rem;
+  }
+
+
 }
 
 @media (max-width: 767px) {
+
+  .centered-documentation{
+    transform: translate(-50%, -60%)!important;
+
+    top: 0% !important;;
+  }
+
+  .about-cit{
+    margin-top:3rem;
+    line-height: 2.8rem;
+    letter-spacing: -3px;
+  }
 
   .mission-text {
     font-size: 18px;
@@ -497,6 +515,9 @@ align-items: stretch;
 
   .header{
     background-color:black !important;
+  }
+  #title-documentation{
+    height: 100px;
   }
 
 }
@@ -594,6 +615,16 @@ align-items: stretch;
 
   /**/
 
+  .centered{
+    top:40%;
+  }
+
+  .home-title{
+    font-size:4rem;
+    line-height: 2.5rem;
+    text-align: left;
+  }
+
   .carousel-item{
     height: 450px !important;;
   }
@@ -607,6 +638,10 @@ align-items: stretch;
   .testo-documentazione{
     margin-left: 15px;
     margin-right: 15px;
+  }
+
+  .margin-carousel-corsi-responsive{
+    margin-left:15%;
   }
 
   .h1title{
@@ -808,7 +843,7 @@ color: rgb(255, 255, 255)
   color:white !important;
   border: 1px solid rgba(255, 255, 255, 0.425) !important;
   /*margin-top:20px;*/
-  padding: 15px;
+  padding: 15px !important;
   border-radius: 10px;
   /*cursor: not-allowed;*/
   font-size: 20px;
@@ -837,10 +872,30 @@ background-size: cover;
   backdrop-filter: blur(20px)
 }
 
+#lezione2{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.719)), url("https://i.pinimg.com/originals/7a/87/e9/7a87e9c17fa2506a55bffa97de096529.png");
+  background-position: center center;
+  background-size: cover;
+    backdrop-filter: blur(20px)
+}
+
+
+#lezione3{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.719)), url("https://i0.wp.com/thesubmarine.it/wp-content/uploads/2016/12/Doors_electra_publicity_photo.jpg?fit=1200%2C891&ssl=1");
+  background-position: center center;
+  background-size: cover;
+    backdrop-filter: blur(20px)
+}
+
 #h1corsi{
-  margin-top:95px;
   text-align: left!important;
-  margin-bottom: 20px;;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  #h1corsi{
+    margin-top: 10px !important;
+  }
 }
 
 #h2corsi{
