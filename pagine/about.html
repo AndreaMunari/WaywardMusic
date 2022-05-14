@@ -138,12 +138,12 @@
 
         <div class="testo-documentazione">
 
-            <img class="logo-documentation" src="/imgs/waywardMusic-logo.svg">
+            <img id="about-logo" class="logo-documentation" src="/imgs/waywardMusic-logo.svg">
 
 
             <p class="about-cit">"Cerca di essere sempre te stesso, così un giorno potrai dire di essere stato l'unico"
             </p>
-            <p class="about-citation-author">
+            <p id="cit-author" class="about-citation-author">
                 -Jim Morrison
             </p>
 
@@ -174,7 +174,14 @@
         </div>
 
 
-        <div class="testo-documentazione">
+        <div class="testo-documentazione" style="margin-top: 50px">
+            <a class="lezione-attiva d-flex flex-column" href="#">
+
+                <div id="c2a" class="call-to-action-about lezione">
+                    <h2 class="c2a-title-h2 text-center">Scopri tutti i corsi <i class="fa-solid fa-angle-right"></i>
+                    </h2>
+                </div>
+            </a>
 
 
 
@@ -199,11 +206,11 @@
                                 <div class="d-flex flex-column text-center justify-content-center align-item-center">
                                     <form>
                                         <div class="form-group">
-                                            <input type="email" class="form-control" id="email1"
+                                            <input type="email" class="form-control search-bar" id="email1"
                                                 placeholder="Inserisci la tua email">
                                         </div>
                                         <div class="form-group">
-                                            <textarea class="form-control" id="password1"
+                                            <textarea class="form-control search-bar" id="password1"
                                                 placeholder="Scrivi qui il messaggio"></textarea>
                                         </div>
                                         <button type="button" class="button my-btn">Invia<i class="fa fa-envelope"
