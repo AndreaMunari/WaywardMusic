@@ -307,6 +307,7 @@ main {
 
 .img-timeline {
   opacity: 0.2;
+  /*filter: brightness(10%);*/
   transition:all 0.2s;
 }
 /*
@@ -347,12 +348,14 @@ main {
 }
 */
 .card-title-timeline {
+  font-size: 40px;
   color: #ea4c89;
   font-weight: bold;
   text-decoration:  none;
 }
 
 .timeline-subtitle {
+  font-size: 25px;
   color: #f881ae;
 }
 

@@ -8,7 +8,7 @@
     <meta name="robots" content="index, follow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Corsi | WaywardMusic</title>
+    <title>Nome Lezione | WaywardMusic</title>
 
     <link rel="icon" type="image/svg+xml" href="../imgs/waywardMusic-favicon.svg">
 
@@ -136,6 +136,7 @@
 
     <main>
 
+        <img src="../imgs/a-great-show.jpg" class="img-fluid" alt="Responsive image">
 
         <!--Test Carousel-->
         <div id="carousel" class="carousel slide" data-bs-ride="carousel">
@@ -177,109 +178,27 @@
 
 
 
-        <div class="testo-documentazione" id="corsi">
-            <h1 id="h1corsi" class="h1title">Corsi</h1>
 
 
-            <!--Searchbar-->
-            <!--<div class="search-bar ms-n3">
-                Cerca la tua ispirazione ... 
-                <i class="fa fa-search right"></i>
-            </div>-->
 
-            <div class="input-group mb-3">
-                <input type="text" class="search-bar form-control" placeholder="Cerca un artista e lasciati ispirare..."
-                    aria-label="Cerca un artista e lasciati ispirare" aria-describedby="button-addon2">
-                <button class="btn btn-outline-secondary" type="button" id="button-addon2">
-                    <i class="fa fa-search"></i>
-                </button>
+
+
+
+
+           
+
+
+
+        <!--Preloader-->
+        <div class="pre-loader">
+            <div class="my-container">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
             </div>
-
-
-
-            <!--Lezioni-->
-
-            <div class="search-item">
-                <a name="TheRollingStones"></a>
-                <h3 class="h3title" name="The Rolling Stones">The Rolling Stones</h3>
-
-                <div class="row flex-grow-1">
-                    <div class="col-lg-4 col-6">
-                        <a class="lezione-attiva" href="lezione-gratuita.html">
-                            <div id="rolling-stones-bg-paintitblack" class="lezione rolling-stones-bg">
-                                <div class="testo-lezioni-corsi">Paint it Black ... inserisci anche testo
-                                    esplicativo
-
-                                </div>
-                                <div class="categoria-lezione gratuita">Lezione Gratuita</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-6">
-                        <a class="lezione-non-attiva" href="#">
-                            <div id="rolling-stones-bg-satisfaction" class="lezione rolling-stones-bg">
-                                <div class="testo-lezioni-corsi">Satisfaction... inserisci anche testo
-                                    esplicativo
-
-                                </div>
-                                <div class="categoria-lezione pagamento">Premium</div>
-                            </div>
-                        </a>
-                    </div>
-
-
-                </div>
-
-            </div>
-
-            <!--Lezioni-->
-
-            <div class="search-item">
-                <a name="LedZeppelin"></a>
-                <h3 class="h3title">Led Zeppelin</h3>
-
-                <div class="row flex-grow-1">
-                    <div class="col-lg-4 col-6">
-                        <a class="lezione-attiva" href="#">
-                            <div id="led-zeppelin-bg-stairway" class="lezione nome-gruppo-per-bg">
-                                <div class="testo-lezioni-corsi">Stairway to Heaven ... inserisci anche testo
-                                    esplicativo
-
-                                </div>
-                                <div class="categoria-lezione gratuita">Lezione Gratuita</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-6">
-                        <a class="lezione-non-attiva" href="#">
-                            <div id="led-zeppelin-bg-blackdog" class="lezione nome-gruppo-per-bg">
-                                <div class="testo-lezioni-corsi">Black Dog ... inserisci anche testo
-                                    esplicativo
-
-                                </div>
-                                <div class="categoria-lezione pagamento">Premium</div>
-                            </div>
-                        </a>
-                    </div>
-
-                </div>
-
-
-
-            </div>
-
-
-
-            <!--Preloader-->
-            <div class="pre-loader">
-                <div class="my-container">
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                </div>
-            </div>
+        </div>
     </main>
 
     <!-- footer -->
@@ -350,29 +269,33 @@
     <script src="../App.js"></script>
 
     <script>
+        jQuery(document).ready(function ($) {
 
+            $('.search-item .h3title').each(function () {
+                $(this).attr('data-search-term', $(this).text().toLowerCase());
+            });
 
-        $(".search-bar").on('change', function() {
+            $('.search-bar').on('change', function () {
 
-            // Retrieve the input field text
-            var filter = $(this).val();
+                var searchTerm = $(this).val().toLowerCase();
 
-            // Loop through the comment list
-            $('.search-item .h3title').each(function() {
+                $('.search-item .h3title').each(function () {
 
-            // If the list item does not contain the text phrase fade it out
-            if ($(this).text().search(new RegExp(filter, "i")) < 0) {
-                $(this).parent().hide();
+                    if (searchTerm.length !== 0) {
+                        if ($(this).filter('[data-search-term *= ' + searchTerm + ']').length > 0 || searchTerm.length < 1) {
+                            $(this).parent().show();
+                        } else {
+                            $(this).parent().hide();
+                        }
+                    } else {
+                        $(this).parent().show();
+                    }
 
-                // Show the list item if the phrase matches and increase the count by 1
-            } else {
-                $(this).parent().show();
-            }
+                });
 
             });
 
         });
-        
     </script>
 
 </body>
