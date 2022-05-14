@@ -307,7 +307,6 @@ main {
 }
 
 .img-timeline {
-  opacity: 0.2;
   /*filter: brightness(10%);*/
   transition:all 0.2s;
 }
@@ -349,15 +348,16 @@ main {
 }
 */
 .card-title-timeline {
-  font-size: 40px;
+  font-size: 2rem;
+  font-family: 'Lato black', sans-serif;
   color: #ea4c89;
   font-weight: bold;
   text-decoration:  none;
 }
 
 .timeline-subtitle {
-  font-size: 25px;
-  color: #f881ae;
+  font-size: 1rem;
+  color: #ffffff;
 }
 
 
@@ -931,6 +931,15 @@ background-size: cover;
   #h1corsi{
     margin-top: 10px !important;
   }
+
+  /*Timeline Fix*/
+  .each-event:before {
+    background-color:black!important;
+  }
+
+  .block:before {
+    background-color:rgb(0, 0, 0)!important;
+  }
 }
 
 #h2corsi{
@@ -1027,4 +1036,49 @@ background-size: cover;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.card-img-overlay{
+  padding: 2rem !important;;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1));
+  background-color:rgba(0, 0, 0, 0.1);
+  transition:background-color 0.2s linear;
+
+
+}
+
+.card-text{
+  line-height:1.4rem;
+  margin-top:1rem;
+  opacity:0.5;
+  transition:all 0.2s ease;
+}
+
+.card-button{
+  background-color: #1c1f2300 !important;
+  border: 1px solid #1c1f2300 !important;
+  color: rgba(255, 255, 255, 0.544)!important;
+}
+
+.card-button:hover{
+  color: rgb(255, 255, 255)!important;
+
+}
+
+.card-img-overlay:hover .card-text{
+  opacity: 1;
+}
+
+.card-img-overlay:hover .card-button{
+  color: rgb(255, 255, 255)!important;
+
+}
+
+.card-img-overlay:hover{
+  background-color:rgba(0, 0, 0, 0.459);
+}
+
+
+.course-name{
+  margin-bottom: 1rem;
 }

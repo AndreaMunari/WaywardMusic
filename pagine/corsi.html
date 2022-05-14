@@ -201,7 +201,7 @@
 
             <div class="search-item">
                 <a class="link-corsi-desktop" name="TheRollingStones"></a>
-                <h3 class="h3title" name="The Rolling Stones">The Rolling Stones</h3>
+                <h3 class="h3title course-name" name="The Rolling Stones">The Rolling Stones</h3>
 
                 <div class="row flex-grow-1">
                     <div class="col-lg-4 col-6">
@@ -236,7 +236,7 @@
 
             <div class="search-item">
                 <a name="LedZeppelin"></a>
-                <h3 class="h3title">Led Zeppelin</h3>
+                <h3 class="h3title course-name">Led Zeppelin</h3>
 
                 <div class="row flex-grow-1">
                     <div class="col-lg-4 col-6">
@@ -352,27 +352,27 @@
     <script>
 
 
-        $(".search-bar").on('change', function() {
+        $(".search-bar").on('change', function () {
 
             // Retrieve the input field text
             var filter = $(this).val();
 
             // Loop through the comment list
-            $('.search-item .h3title').each(function() {
+            $('.search-item .h3title').each(function () {
 
-            // If the list item does not contain the text phrase fade it out
-            if ($(this).text().search(new RegExp(filter, "i")) < 0) {
-                $(this).parent().hide();
+                // If the list item does not contain the text phrase fade it out
+                if ($(this).text().search(new RegExp(filter, "i")) < 0) {
+                    $(this).parent().hide();
 
-                // Show the list item if the phrase matches and increase the count by 1
-            } else {
-                $(this).parent().show();
-            }
+                    // Show the list item if the phrase matches and increase the count by 1
+                } else {
+                    $(this).parent().show();
+                }
 
             });
 
         });
-        
+
     </script>
 
 </body>
