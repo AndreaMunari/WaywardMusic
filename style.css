@@ -1,5 +1,6 @@
 body {
   background-color: #000;
+  font-family:'lato',sans-serif !important;
 }
 
 .body {
@@ -269,12 +270,12 @@ main {
   line-height: 1.125;
   font-family: 'Water Brush', cursive;*/
   font-size: 120px;
-  margin: 64px auto;
-  line-height: 1.1;
-  letter-spacing: -0.8px;
-  color: white;
-  font-family: 'lato', cursive;
-  font-weight: bold;
+    margin: 64px auto;
+    line-height: 1.1;
+    letter-spacing: -0.8px;
+    color: white;
+    font-family: 'lato', sans-serif;
+    font-weight: bold;
 
 }
 
@@ -307,7 +308,6 @@ main {
 }
 
 .img-timeline {
-  opacity: 0.2;
   /*filter: brightness(10%);*/
   transition: all 0.2s;
 }
@@ -350,15 +350,16 @@ main {
 }
 */
 .card-title-timeline {
-  font-size: 40px;
+  font-size: 2rem;
+  font-family: 'Lato black', sans-serif;
   color: #ea4c89;
   font-weight: bold;
   text-decoration: none;
 }
 
 .timeline-subtitle {
-  font-size: 25px;
-  color: #f881ae;
+  font-size: 1rem;
+  color: #ffffff;
 }
 
 
@@ -401,6 +402,8 @@ main {
   font-weight: bolder;
   text-align: center;
   line-height: 3rem;
+  font-family: 'Lato black', sans-serif;
+
 }
 
 .nav-item {
@@ -464,6 +467,7 @@ main {
     margin-top: 3rem;
     line-height: 2.8rem;
     letter-spacing: -3px;
+    font-size: 2.5rem;
   }
 
   .mission-text {
@@ -537,9 +541,10 @@ main {
 /*Pagina documentazione*/
 .h1title {
   font-size: 80px;
-  margin: 64px auto;
-  line-height: 1.1;
-  letter-spacing: -0.8px;
+    margin: 64px auto;
+    line-height: 1.1;
+    letter-spacing: -0.8px;
+    font-weight: 700;
 }
 
 .h2title {
@@ -575,11 +580,13 @@ main {
 .p-doc {
   display: block;
   margin-block-start: 0em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-size: 20px;
-  font-weight: 300;
+   margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Lato thin', sans-serif;
+
 }
 
 .doc-title {
@@ -690,6 +697,11 @@ main {
     color: #fff;
   }
 
+  #about-logo{
+    margin-top: 10vh !important;;
+  }
+  
+
 }
 
 .footer-logo {
@@ -750,6 +762,20 @@ main {
   align-items: left;
   opacity: 0.8;
   width: 100%;
+}
+#about-logo{
+  margin-top:25vh;
+}
+
+@media (min-width: 991px) {
+ .link-corsi-desktop{
+   position:relative;
+   z-index: 5;
+ }
+
+ #cit-author{
+   margin-bottom:13rem;
+ }
 }
 
 
@@ -859,9 +885,15 @@ main {
   border-radius: 10px;
   /*cursor: not-allowed;*/
   font-size: 20px;
-  font-weight: 100;
+  font-weight:100;
+ font-family: 'lato',sans-serif;
 }
 
+.search-bar:focus{
+  background-color: rgba(47, 47, 47, 0.607) !important;
+  box-shadow: 0 0 10px #eb598a6d, 0 0 40px #eb598a3a, 0 0 80px #eb598a2f!important;
+
+}
 
 
 .right {
@@ -909,11 +941,21 @@ main {
   #h1corsi {
     margin-top: 10px !important;
   }
+
+  /*Timeline Fix*/
+  .each-event:before {
+    background-color:black!important;
+  }
+
+  .block:before {
+    background-color:rgb(0, 0, 0)!important;
+  }
 }
 
-#h2corsi {
-  margin-top: 125px;
-  text-align: left !important;
+#h2corsi{
+  margin-top:125px;
+  text-align: left!important;
+  font-weight:bold;
 }
 
 .text-slide-corsi {
@@ -990,4 +1032,91 @@ main {
   .current-lesson {
     margin-top: 0px;
   }
+}
+
+.modal-input-bar{
+  background-color: rgba(255, 255, 255, 0.90) !important;
+  color:rgb(53, 53, 53) !important;
+  border: 1px solid rgba(255, 255, 255, 0.425) !important;
+  /*margin-top:20px;*/
+  padding: 15px !important;
+  border-radius: 10px;
+  /*cursor: not-allowed;*/
+  font-size: 20px;
+  font-weight:100;
+}
+
+.modal-input-bar:focus{
+  background-color: rgb(255, 255, 255) !important;
+  box-shadow: 0 0 10px #eb598a6d, 0 0 40px #eb598a3a, 0 0 80px #eb598a2f!important;
+}
+
+.call-to-action-about{
+
+  border-radius:5px;
+
+  min-height: 200px;
+}
+
+#c2a{
+  color:rgba(255, 255, 255, 0.577);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.719)), url("https://www.musicianwave.com/wp-content/uploads/2020/09/band-788x525.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+#c2a:hover{
+  color:rgb(255, 255, 255);
+}
+
+.c2a-title-h2{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-img-overlay{
+  padding: 2rem !important;;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1));
+  background-color:rgba(0, 0, 0, 0.1);
+  transition:background-color 0.2s linear;
+
+
+}
+
+.card-text{
+  line-height:1.4rem;
+  margin-top:1rem;
+  opacity:0.5;
+  transition:all 0.2s ease;
+}
+
+.card-button{
+  background-color: #1c1f2300 !important;
+  border: 1px solid #1c1f2300 !important;
+  color: rgba(255, 255, 255, 0.544)!important;
+}
+
+.card-button:hover{
+  color: rgb(255, 255, 255)!important;
+
+}
+
+.card-img-overlay:hover .card-text{
+  opacity: 1;
+}
+
+.card-img-overlay:hover .card-button{
+  color: rgb(255, 255, 255)!important;
+
+}
+
+.card-img-overlay:hover{
+  background-color:rgba(0, 0, 0, 0.459);
+}
+
+
+.course-name{
+  margin-bottom: 1rem;
 }
