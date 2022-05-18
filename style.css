@@ -597,11 +597,22 @@ main {
   max-width: 700px;
   margin: auto;
 }
+/*Guardare quale è corretto*/
+.site-wireframe{
+  margin-bottom:2rem;
+}
 
 .site-wireframe {
   width: 80%;
+  border: 2px solid #ffffff63;
+    border-radius: 10px;
 }
 
+/*Guardare quale è corretto*/
+
+.documentation-link{
+  font-family: 'lato black', sans-serif;
+}
 .documentation-link {
   color: #ea4c89 !important;
   font-weight: bold !important;
@@ -782,6 +793,9 @@ main {
 
 
 /*corsi*/
+.lezione{
+  border-radius: 5px;
+}
 .lezione {
   width: 100%;
   height: 200px;
@@ -837,8 +851,10 @@ main {
   font-weight: 500;
   font-size: 1rem;
   text-decoration: none;
-  margin-top: 133px;
-}
+  margin-top:133px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+ }
 
 
 .pagamento {
@@ -967,20 +983,38 @@ main {
   background-color: #ea4c89 !important;
 }
 
-
-
-.image-about {
-  padding: 20vh;
+@media (min-width: 767px) {
+  .image-about{
+     min-height: 400px;
+  }
 }
 
-#image-about-1 {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.719)), url("https://leganerd.com/wp-content/uploads/2021/09/Led-Zeppelin-Laurance-Ratner-scaled.jpg");
+@media (max-width: 767px) {
+  .image-about{
+    margin-top:4rem !important;
+    margin-bottom:4rem !important;
+  }
+}
+
+
+
+
+
+.image-about{
+ padding: 20vh;
+ margin-top:8rem;
+ margin-bottom:8rem;
+}
+
+#image-about-1{
+
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url("https://leganerd.com/wp-content/uploads/2021/09/Led-Zeppelin-Laurance-Ratner-scaled.jpg");
   background-position: center center;
   background-size: cover;
 }
 
-#image-about-2 {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.719)), url("https://leganerd.com/wp-content/uploads/2021/09/Led-Zeppelin-Laurance-Ratner-scaled.jpg");
+#image-about-2{
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url("https://staticr1.blastingcdn.com/media/photogallery/2021/7/29/os/b_1200x675x75/system-of-a-down-il-chitarrista-ricorda-una-vecchia-rissa-durante-toxicity_2648926.jpg");
   background-position: center center;
   background-size: cover;
 }
@@ -1035,20 +1069,20 @@ main {
 }
 
 .modal-input-bar{
-  background-color: rgba(255, 255, 255, 0.90) !important;
-  color:rgb(53, 53, 53) !important;
+  background-color: #33373b !important;
+  color:rgb(189, 189, 189) !important;
   border: 1px solid rgba(255, 255, 255, 0.425) !important;
   /*margin-top:20px;*/
   padding: 15px !important;
   border-radius: 10px;
   /*cursor: not-allowed;*/
-  font-size: 20px;
+  font-size: 2rem;
   font-weight:100;
 }
 
 .modal-input-bar:focus{
-  background-color: rgb(255, 255, 255) !important;
-  box-shadow: 0 0 10px #eb598a6d, 0 0 40px #eb598a3a, 0 0 80px #eb598a2f!important;
+  background-color: #202223 !important;
+  box-shadow: 0 0 10px #00000053, 0 0 40px #00000038, 0 0 60px #0000002f!important;
 }
 
 .call-to-action-about{
@@ -1120,3 +1154,8 @@ main {
 .course-name{
   margin-bottom: 1rem;
 }
+
+.modal-button{
+  margin:0px;
+}
+
