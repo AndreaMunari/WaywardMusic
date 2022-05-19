@@ -1159,3 +1159,26 @@ main {
   margin:0px;
 }
 
+.container-video {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.gruppo-lezioni {
+  height: 230px;
+}
+
+@media (max-width: 991px) {
+  .gruppo-lezioni {
+    height: 500px;
+  }
+}

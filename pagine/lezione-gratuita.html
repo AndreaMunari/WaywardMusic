@@ -3,6 +3,16 @@
 <!---------------------------------------------------------------->
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HCKYPJ3Y70"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-HCKYPJ3Y70');
+    </script>
+    
     <meta charset="utf-8" />
     <meta name="description" content="WaywardMusic - Find your style" />
     <meta name="robots" content="index, follow" />
@@ -143,13 +153,13 @@
             <div class="row">
                 <!--style="min-height: 600px;"-->
                 <h3 class="h3title" name="The Rolling Stones">Lezione 0 - Ascolto di 'Paint it, Black'</h3>
-                <!--<div class="embed-responsive embed-responsive-16by9">-->
-                <iframe width="560" height="560" class="col-lg-12 col-md-12 col-sm-12"
-                    src="https://www.youtube.com/embed/O4irXQhgMqg" title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
-                <!--</div>-->
+                <div class="embed-responsive embed-responsive-16by9 container-video">
+                    <iframe width="560" height="560" class="col-lg-12 col-md-12 col-sm-12 video"
+                        src="https://www.youtube.com/embed/O4irXQhgMqg" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
             </div>
 
 
@@ -159,7 +169,7 @@
 
         <div id="carousel-lezioni" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div class="carousel-item active gruppo-lezioni">
                     <div class="row flex-grow-1">
                         <div class="col-lg-3 col-6">
                             <a class="lezione-lista" href="lezione-gratuita.html">
@@ -207,7 +217,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item gruppo-lezioni">
                     <div class="row flex-grow-1">
                         <div class="col-lg-3 col-6">
                             <a class="lezione-non-attiva" href="#">
@@ -256,7 +266,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item gruppo-lezioni">
                     <div class="row flex-grow-1">
                         <div class="col-lg-3 col-6">
                             <a class="lezione-non-attiva" href="#">
