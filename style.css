@@ -927,23 +927,23 @@ main {
 }
 
 #lezione1 {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.719)), url("https://storage.googleapis.com/hivemusic/2019/04/image-rolling-stones-cover.jpg");
-  background-position: center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.719)), url("https://upload.wikimedia.org/wikipedia/commons/1/14/Rolling_Stones_1971.jpg");
+  background-position: top center;
   background-size: cover;
   backdrop-filter: blur(20px)
 }
 
 #lezione2 {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.719)), url("https://i.pinimg.com/originals/7a/87/e9/7a87e9c17fa2506a55bffa97de096529.png");
-  background-position: center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.719)), url("https://upload.wikimedia.org/wikipedia/commons/1/1c/Hindenburg_disaster.jpg");
+  background-position: top center;
   background-size: cover;
   backdrop-filter: blur(20px)
 }
 
 
 #lezione3 {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.719)), url("https://i0.wp.com/thesubmarine.it/wp-content/uploads/2016/12/Doors_electra_publicity_photo.jpg?fit=1200%2C891&ssl=1");
-  background-position: center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.719)), url("https://upload.wikimedia.org/wikipedia/commons/7/7c/Beatles_and_George_Martin_in_studio_1966.JPG");
+  background-position: top center;
   background-size: cover;
   backdrop-filter: blur(20px)
 }
@@ -1185,4 +1185,14 @@ main {
 
 a {
   z-index: 0;
+}
+
+.h3lesson{
+  line-height: 1.5;
+
+}
+
+.sitar{
+  transform: rotate(-90deg);
+
 }
