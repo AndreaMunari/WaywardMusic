@@ -200,13 +200,6 @@ main {
   width: 80% !important;
 }
 
-/*
-.navbar{
-  background-color: rgba(0,0,0,0) ; 
-  transition:  background-color 0.2s, height 0.2s;
-  transition-timing-function: ease-in-out;
-  height: 120px
-}*/
 
 .navbar {
 
@@ -312,30 +305,6 @@ main {
   transition: all 0.2s;
 }
 
-/*
-.lezione{
-  width: 100%;
-  height: 200px;
-  margin-bottom: 1rem;
-  background-size: cover;
-  background-image: url("https://pixelprowess.com/i/carousel_swamp.png");
-  transition:all 0.2s;
-}
-
-.lezione:hover{
-  color: #fff;
-  background: #EB598A;
-  -webkit-box-shadow: 0 0 10px #eb598a4e, 0 0 40px #eb598a22, 0 0 80px #eb598a0f;
-          box-shadow: 0 0 10px #eb598a6d, 0 0 40px #EB598A, 0 0 80px #eb598a2f;
-}
-*/
-
-/*
-.each-year > .title {
-  background-color: #000;
-}
-*/
-
 .each-event:hover>*:not(.card-img-overlay) {
   /*-webkit-filter: blur(3px);
   filter: blur(3px);*/
@@ -343,12 +312,6 @@ main {
   box-shadow: 0 0 10px #eb598a6d, 0 0 40px #EB598A, 0 0 80px #eb598a2f;
 }
 
-/*
-.card-timeline:hover > *:not(.card-img-overlay) {
-   -webkit-box-shadow: 0 0 10px #eb598a4e, 0 0 40px #eb598a22, 0 0 80px #eb598a0f;
-           box-shadow: 0 0 10px #eb598a6d, 0 0 40px #EB598A, 0 0 80px #eb598a2f;
-}
-*/
 .card-title-timeline {
   font-size: 2rem;
   font-family: 'Lato black', sans-serif;
@@ -789,9 +752,6 @@ main {
  }
 }
 
-
-
-
 /*corsi*/
 .lezione{
   border-radius: 5px;
@@ -916,10 +876,6 @@ main {
 }
 
 
-
-
-
-
 .testo-lezioni-corsi {
   position: relative;
   padding-left: 20px;
@@ -944,7 +900,15 @@ main {
 .search-bar:focus{
   background-color: rgba(47, 47, 47, 0.607) !important;
   box-shadow: 0 0 10px #eb598a6d, 0 0 40px #eb598a3a, 0 0 80px #eb598a2f!important;
+}
 
+.search-item {
+  position:relative;
+}
+
+.link-corsi-desktop {
+  position:absolute;
+  top:-125px;
 }
 
 
@@ -1195,3 +1159,30 @@ main {
   margin:0px;
 }
 
+.container-video {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.gruppo-lezioni {
+  height: 230px;
+}
+
+@media (max-width: 991px) {
+  .gruppo-lezioni {
+    height: 500px;
+  }
+}
+
+a {
+  z-index: 0;
+}
