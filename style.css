@@ -818,7 +818,6 @@ main {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.53)), url("https://e.snmc.io/i/1200/s/10a2f05241e036f7d2895df3ef6ce663/5026476");
   background-position: center center;
   background-size: cover;
-
 }
 
 #led-zeppelin-bg-blackdog {
@@ -838,9 +837,46 @@ main {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.53)), url("https://live.staticflickr.com/4772/40951892541_c079bfc4ae_b.jpg");
   background-position: center center;
   background-size: cover;
-
 }
 
+#elvis-thatsallright {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.53)), url("https://upload.wikimedia.org/wikipedia/commons/6/6b/That%27s_all_right.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+#TheBeatles-yesterday {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.53)), url("https://upload.wikimedia.org/wikipedia/commons/2/25/Las_Vegas_-_Yesterday_-_The_Beatles_Tribute_Show_Band_%2819995801171%29.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+#Queen-BR{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.53)), url("https://upload.wikimedia.org/wikipedia/commons/8/80/Robb_Queen.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+#Guns-welcome-to-the-jungle{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.53)), url("https://images.mubicdn.net/images/cast_member/259481/cache-97276-1410119961/image-w856.jpg?size=240x");
+  background-position: center center;
+  background-size: cover;
+}
+
+
+
+#Nirvana-smell-like-teen-spirit{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.53)), url("https://images.pexels.com/photos/1933589/pexels-photo-1933589.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background-position: center center;
+  background-size: cover;
+}
+
+
+#Maneskin-zitti-e-buoni{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.53)), url("https://static.tvtropes.org/pmwiki/pub/images/maneskin.jpg");
+  background-position: center center;
+  background-size: cover;
+}
 
 
 
