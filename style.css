@@ -234,6 +234,13 @@ main {
   overflow: hidden;
 }
 
+@media (max-width: 767px) {
+
+  .cropped {
+    height: 60vh;
+  }
+}
+
 /*Navbar scrolled*/
 .scrolled {
   background-color: rgba(23, 19, 19, 0.5);
