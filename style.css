@@ -1013,14 +1013,14 @@ main {
 
 #image-about-1{
 
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url("https://leganerd.com/wp-content/uploads/2021/09/Led-Zeppelin-Laurance-Ratner-scaled.jpg");
-  background-position: center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url("https://upload.wikimedia.org/wikipedia/commons/2/2e/Jimi_Hendrix_experience_1968.jpg");
+  background-position: top center;
   background-size: cover;
 }
 
 #image-about-2{
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url("https://staticr1.blastingcdn.com/media/photogallery/2021/7/29/os/b_1200x675x75/system-of-a-down-il-chitarrista-ricorda-una-vecchia-rissa-durante-toxicity_2648926.jpg");
-  background-position: center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url("https://upload.wikimedia.org/wikipedia/commons/0/0d/David_Bowie_and_Cher_1975.JPG");
+  background-position: top center;
   background-size: cover;
 }
 
