@@ -615,7 +615,6 @@ main {
 
   .carousel-item {
     height: 450px !important;
-    ;
   }
 
   .p-doc {
@@ -813,6 +812,12 @@ main {
 
 #Queen-BR{
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.53)), url("https://upload.wikimedia.org/wikipedia/commons/8/80/Robb_Queen.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+#Patti-BR {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.53)), url("https://upload.wikimedia.org/wikipedia/commons/4/43/Patti_Smith_%28Haldern_Pop_Festival_2014%29_IMGP4121_smial_wp.jpg");
   background-position: center center;
   background-size: cover;
 }
@@ -1195,4 +1200,41 @@ a {
 .sitar{
   transform: rotate(-90deg);
 
+}
+
+/*IMMAGINI CAROUSEL CORSI*/
+#rolling-stones-bg-Angie{  
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.53)), url("https://upload.wikimedia.org/wikipedia/commons/d/d7/Rolling_Stones_1965.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+#rolling-stones-bg-Gimme-Shelter{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.53)), url("https://upload.wikimedia.org/wikipedia/commons/1/14/Rolling_Stones_1971.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+#rolling-stones-bg-Ruby-Tuesday{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.53)), url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Charlie_Watts_-_Hanover_2006.jpg/800px-Charlie_Watts_-_Hanover_2006.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+#rolling-stones-bg-Rain-Fall-Down{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.53)), url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Rolling_Stones_at_Schiphol_1966.png/1280px-Rolling_Stones_at_Schiphol_1966.png");
+  background-position: center center;
+  background-size: cover;
+}
+
+#rolling-stones-bg-Sympathy-For-The-Devil{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.53)), url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Rolling-Stones-1965-Finland.jpg/1280px-Rolling-Stones-1965-Finland.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+#rolling-stones-bg-Living-In-A-Ghost-Town{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.53)), url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/KeithR2.JPG/1280px-KeithR2.JPG");
+  background-position: center center;
+  background-size: cover;
 }
