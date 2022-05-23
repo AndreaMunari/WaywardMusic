@@ -990,7 +990,7 @@ main {
 
 @media (min-width: 767px) {
   .image-about{
-     min-height: 400px;
+     min-height: 800px;
   }
 }
 
