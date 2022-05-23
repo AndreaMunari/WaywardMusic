@@ -1238,3 +1238,16 @@ a {
   background-position: center center;
   background-size: cover;
 }
+
+/*U2*/
+#U2-The-Miracle{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.53)), url("https://upload.wikimedia.org/wikipedia/commons/1/11/Bono_U2_at_Prague_2000_IMF.jpeg");
+  background-position: center center;
+  background-size: cover;
+}
+
+#U2-Sunday-Bloody-Sunday{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.53)), url("https://upload.wikimedia.org/wikipedia/commons/6/60/Bush_and_Bono.jpg");
+  background-position: center center;
+  background-size: cover;
+}
