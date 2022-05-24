@@ -735,7 +735,7 @@ main {
   font-size: 20px;
   font-weight: lighter;
   list-style-type: circle;
-
+  font-family: 'lato thin';
 }
 
 .logo-documentation {
